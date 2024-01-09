@@ -12,7 +12,7 @@ with open(os.path.abspath("./README.md"), "r") as file:
 setup(
     name="dpy-http-server",
     version=server.__version__,
-    description="Efficiently and intuitively create and manage an HTTP web server running in tandem with a discord.py bot",
+    description="Efficiently and intuitively create and manage an HTTP web server running in tandem with a discord.py library bot",
     long_description=readme,
     long_description_content_type="text/markdown",
     url="https://gitlab.com/marwynnsomridhivej/dpy-http-server",
@@ -31,7 +31,6 @@ setup(
     packages=["server"],
     include_package_data=True,
     install_requires=[
-        "discord.py",
         "aiohttp",
     ]
 )
